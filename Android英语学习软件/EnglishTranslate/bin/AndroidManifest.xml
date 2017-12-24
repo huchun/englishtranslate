@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cc.icoc.javaxu.englishtranslate.view"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icoc"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!--     -->
+ 		<meta-data android:name="BaiduMobAd_APP_ID" android:value="f22cc6c6" /> 
+		<meta-data android:name="BaiduMobAd_APP_SEC" android:value="f22cc6c6" />
+		<activity android:name="com.baidu.mobads.AppActivity" 
+		    android:configChanges="keyboard|keyboardHidden|orientation" />
+       
+            <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         
+            <activity android:name=".EnglishMainActivity" android:screenOrientation="portrait"></activity>
+ 			 <activity android:name="cc.icoc.javaxu.englishtranslate.kaoyan.Main" android:screenOrientation="portrait"></activity>
+            
+ 			 <activity android:name="cc.icoc.javaxu.englishtranslate.kaoyan.study" android:screenOrientation="portrait"></activity>
+ 			 <activity android:name="cc.icoc.javaxu.englishtranslate.kaoyan.studyWord" android:screenOrientation="portrait"></activity>
+ 			 <activity android:name="cc.icoc.javaxu.englishtranslate.kaoyan.ReviewMain" android:screenOrientation="portrait"></activity> 
+ 			 <activity android:name="cc.icoc.javaxu.englishtranslate.kaoyan.Review" android:screenOrientation="portrait"></activity>
+ 			 <activity android:name="cc.icoc.javaxu.englishtranslate.kaoyan.Test" android:screenOrientation="portrait"></activity>
+ 			 <activity android:name="cc.icoc.javaxu.englishtranslate.kaoyan.TestList" android:screenOrientation="portrait"></activity>
+ 			 <activity android:name="cc.icoc.javaxu.englishtranslate.kaoyan.Attention" android:screenOrientation="portrait"></activity>
+             <activity android:name="cc.icoc.javaxu.englishtranslate.kaoyan.EditWord" android:screenOrientation="portrait"></activity>
+    
+    </application>
+ 	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<!-- 以下为可选权限 -->
+  	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  	<uses-permission android:name="android.permission.RECORD_AUDIO" /> 
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  	<uses-permission 
+  	    android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" /> 
+    
+    
+
+</manifest>

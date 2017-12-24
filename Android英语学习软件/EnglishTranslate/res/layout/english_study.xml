@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+		
+		<EditText
+            android:id="@+id/everyday_one_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Welcome to here!"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_marginTop="12.0dip"
+            android:layout_below="@id/everyday_one_english" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/translate"
+            android:layout_marginLeft="3dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+    <LinearLayout
+        android:layout_marginTop="20.0dip"
+        android:layout_below="@id/translate"
+        android:id="@+id/layout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+        
+        <Button 
+            android:id="@+id/btnSpeak"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/reSpeak"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+	    	android:background="@drawable/my_button_click_selector2"
+            />
+        <Button 
+            android:id="@+id/btnChange"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/task_a_rest"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:textColor="#000000"
+	    	android:background="@drawable/my_button_click_selector2"
+            android:textSize="15sp"
+            />
+        
+        
+    </LinearLayout>
+    
+    <ProgressBar 
+        android:id="@+id/english_daily_progress"
+        android:layout_marginTop="40.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/cmp_progress_dialog_indeterminate"
+        />
+    
+    
+    <android.gesture.GestureOverlayView 
+        android:layout_below="@id/layout"
+        android:id="@+id/myGesture"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gestureStrokeType="multiple"
+        android:fadeOffset="500"
+        android:gestureColor="#ff0033"
+        />
+
+</RelativeLayout>

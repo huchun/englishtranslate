@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">颖老师</string>
+    <string name="reSpeak">朕命你再读一遍</string>
+    <string name="task_a_rest">朕累了要去休息</string>
+    <string name="tip">温馨提示</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:baiduadsdk="http://schemas.android.com/apk/res/cc.icoc.javaxu.englishtranslate.view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    	<FrameLayout
+            android:id="@+id/context"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+        </FrameLayout>
+
+    	
+	<com.baidu.mobads.AdView android:id="@+id/adView"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"  
+		baiduadsdk:adSize="0"
+		baiduadsdk:adId = ""  />
+	  	<!--注： baiduadsdk:adId可以指定为"",表示默认广告位-->
+    
+</RelativeLayout>
